@@ -27,7 +27,7 @@ public class Hopital {
         return "L'hôpital est composée de " + getNbrServices() + " services :\n" + getLesServices();
     }
 
-    public String affectation(AffectEnum a){
+    public String admission(AffectEnum a){
         String mes ="";
         if(a==AffectEnum.admission1){
             Admission1 s1 = new Admission1();
