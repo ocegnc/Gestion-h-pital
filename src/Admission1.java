@@ -1,15 +1,20 @@
-public class Admission1 {
-    private int nbLitVoulu;
+import java.util.ArrayList;
+
+public class Admission1 implements Admission{
+    private String type;
     private Service service;
+    private ArrayList<Admission1> lesAdmis;
 
-    public void estAdmis(Patient p, Service s){
-        for ()
-        for (Chambre chambre : lesChambres){
-            if (chambre.getNbLit()==nbLitVoulu){
+    public void estAdmis(ArrayList<Service> lesServices ){
+        for (Service s : lesServices) {
+            for (Chambre c : lesChambres) {
+                if (c.getLit1().isLibre()=true) {
 
+                }
             }
-        }
 
+
+        }
     }
 
     public void estSorti(Patient p){

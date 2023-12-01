@@ -1,3 +1,3 @@
-public class Admission2 {
+public class Admission2 implements Admission{
     public void estAdmis(){}
 }

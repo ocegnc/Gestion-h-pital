@@ -7,16 +7,5 @@ public class Patient {
         this.numSecu=numSecu;
     }
 
-    public String affectation(AffectEnum a){
-        String mes ="";
-        if(a==AffectEnum.admission1){
-            Admission1 s1 = new Admission1();
-            s1.estAdmis();
-        }else{
-            Admission2 s2 = new Admission2();
-            s2.estAdmis();
-        }
-        mes = "le patient a été admis à l'hôpital";
-        return mes;
-    }
+
 }
