@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class Service {
     private String nom;
     private int num;
+   // private int nbChambresSimples;
+   // private int nbChambresDoubles;
     private ArrayList<Chambre> lesChambresSimples;
     private ArrayList<Chambre> lesChambresDoubles;
 
@@ -10,8 +12,14 @@ public class Service {
     public Service(String nom, int num) {
         this.nom = nom;
         this.num = num;
+       // this.nbChambresSimples = nbChambresSimples;
+       // this.nbChambresDoubles = nbChambresDoubles;
         this.lesChambresSimples = new ArrayList<>();
         this.lesChambresDoubles = new ArrayList<>();
+
+        /*for (int i = 1; i <= nbChambresSimples; i++) {
+            lesChambresSimples.add(new Chambre(1, i, Lit lit1));
+        }*/
 
     }
 
@@ -44,7 +52,7 @@ public class Service {
 
     public String toString(){
         int nbChambres = lesChambresSimples.size()+lesChambresDoubles.size();
-        String res = "Service " + getNumService() + " : " + getNom()
+        String res = "Service " + " : " + getNom()
                 + " composé de " + nbChambres + " chambres";
         for(Chambre c : lesChambresSimples){
             res += "\n --> Chambre " + getNumChambre(c) + " : " + c;

@@ -39,7 +39,7 @@ public class Hopital {
             lesAdmis.add(s1);
         }else{
             Admission2 s2 = new Admission2();
-            s2.estAdmis();
+            s2.estAdmis(p, heureAdmission);
             lesAdmis.add(s2);
         }
         mes = "le patient a été admis à l'hôpital";
