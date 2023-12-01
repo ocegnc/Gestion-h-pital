@@ -6,7 +6,7 @@ public class Admission1 implements Admission{
     private Service service;
     private ArrayList<Chambre> lesChambres;
     private ArrayList<Service> lesServices;
-    private ArrayList<> lesAdmis;
+
 
     public void estAdmis(Patient p, Date heureAdmission){
         for (Service s : lesServices) {

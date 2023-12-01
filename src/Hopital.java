@@ -5,6 +5,8 @@ public class Hopital {
     private int nbrServices;
     private ArrayList<Service> lesServices;
 
+    private ArrayList<Admission> lesAdmis;
+
 
     public Hopital(int nbrServices) {
         this.nbrServices = nbrServices;
@@ -34,9 +36,11 @@ public class Hopital {
         if(a==AffectEnum.admission1){
             Admission1 s1 = new Admission1();
             s1.estAdmis(p, heureAdmission);
+            lesAdmis.add(s1);
         }else{
             Admission2 s2 = new Admission2();
             s2.estAdmis();
+            lesAdmis.add(s2);
         }
         mes = "le patient a été admis à l'hôpital";
         return mes;
