@@ -1,10 +1,27 @@
 import java.sql.Time;
 
 public abstract class Lit {
-    private Time occupationMax;
+    protected int occupationMax;
+    protected String type;
+    protected boolean libre;
 
-    public Lit(Time occupationMax) {
-        this.occupationMax = occupationMax;
+    public int getOccupationMax() {
+        return occupationMax;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public boolean isLibre() {
+        return libre;
+    }
+
+    public boolean occuperLit(){
+        return this.libre = false;
+    }
+    public boolean libererLit(){
+        return this.libre = true;
     }
 
 

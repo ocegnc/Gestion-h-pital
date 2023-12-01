@@ -1,5 +1,6 @@
 public class Chambre {
     private int nbLit;
+    private Service
     private int num;
     private Lit lit1;
     private Lit lit2;
@@ -19,5 +20,13 @@ public class Chambre {
 
     public int getNum() {
         return num;
+    }
+
+    public int getNbLit() {
+        return nbLit;
+    }
+
+    public String toString(){
+        return " contenant " + getNbLit() + lit1.getType();
     }
 }

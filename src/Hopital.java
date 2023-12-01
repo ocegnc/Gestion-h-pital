@@ -9,10 +9,22 @@ public class Hopital {
         this.lesServices = new ArrayList<>();
     }
 
+    public int getNbrServices() {
+        return nbrServices;
+    }
+
+    public ArrayList<Service> getLesServices() {
+        return lesServices;
+    }
+
     public void ajouterService(Service service){
         if(lesServices.size()<9){
             lesServices.add(service);
         }
+    }
+
+    public String toString(){
+        return "L'hôpital est composée de " + getNbrServices() + " services :\n" + getLesServices();
     }
 
 }

@@ -36,4 +36,13 @@ public class Service {
         }
     }
 
+    public String toString(){
+        String res = "Service " + getNumService() + " : " + getNom()
+                + " composé de " + lesChambres.size() + " chambres";
+        for(Chambre c : lesChambres){
+            res += "\n --> Chambre " + getNumChambre(c) + " : " + c.toString();
+        };
+        return res;
+    }
+
 }

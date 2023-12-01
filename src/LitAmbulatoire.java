@@ -1,7 +1,11 @@
 import java.sql.Time;
 
 public class LitAmbulatoire extends Lit{
-    public LitAmbulatoire(Time occupationMax) {
-        super(occupationMax);
+    public LitAmbulatoire() {
+        super();
+        this.occupationMax = 24*60*60;
+        this.type = "Ambulatoire";
     }
+
+
 }
