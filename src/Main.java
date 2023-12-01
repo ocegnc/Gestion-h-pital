@@ -22,6 +22,7 @@ public class Main {
     h.ajouterService(urg);
     h.ajouterService(onco);
 
+
     /*for(int i=1; i<6 ; i++){
         LitAmbulatoire l1 = new LitAmbulatoire();
     }
