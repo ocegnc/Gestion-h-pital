@@ -1,6 +1,6 @@
 public class Chambre {
     private int nbLit;
-    private Service
+    private Service s;
     private int num;
     private Lit lit1;
     private Lit lit2;
@@ -30,7 +30,4 @@ public class Chambre {
         return " contenant " + getNbLit() + lit1.getType();
     }
 
-    public int getNbLit() {
-        return nbLit;
-    }
 }
