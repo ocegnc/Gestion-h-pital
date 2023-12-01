@@ -29,4 +29,8 @@ public class Chambre {
     public String toString(){
         return " contenant " + getNbLit() + lit1.getType();
     }
+
+    public int getNbLit() {
+        return nbLit;
+    }
 }
