@@ -1,8 +1,10 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Hopital {
     private int nbrServices;
     private ArrayList<Service> lesServices;
+
 
     public Hopital(int nbrServices) {
         this.nbrServices = nbrServices;
@@ -27,11 +29,11 @@ public class Hopital {
         return "L'hôpital est composée de " + getNbrServices() + " services :\n" + getLesServices();
     }
 
-    public String admission(AffectEnum a){
+    public String admission(AffectEnum a, Patient p, Date heureAdmission ){
         String mes ="";
         if(a==AffectEnum.admission1){
             Admission1 s1 = new Admission1();
-            s1.estAdmis();
+            s1.estAdmis(p, heureAdmission);
         }else{
             Admission2 s2 = new Admission2();
             s2.estAdmis();

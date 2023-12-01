@@ -1,6 +1,12 @@
+import java.util.Date;
+
 public class Patient {
     private String nomP;
     private int numSecu;
+
+    private Chambre c;
+
+    private Date heureAdmission;
 
     public Patient(String nomP, int numSecu){
         this.nomP=nomP;
@@ -28,5 +34,14 @@ public class Patient {
             }
         }
         return tarif;
+    }
+
+    public void attribuerChambre(Chambre c, Date heureAdmission){
+        this.c=c;
+        this.heureAdmission=heureAdmission;
+    }
+
+    public Chambre getC(){
+        return c;
     }
 }
